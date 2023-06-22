@@ -18,11 +18,11 @@ public class FrmLibro extends javax.swing.JFrame {
     Libro libro = new Libro();
     
     public void mostrarRegistro(){
-        tARegistros.setText("");
-        for(Libro l:libros){
-            //tARegistros.setText(tARegistros.getText()+"\n"+l.toString());
-            System.out.println(l.toString());
+        String texto = "";
+        for(Libro l : libros){
+            texto += l.toString()+ "\n\n";
         }
+        tARegistros.setText(texto);
     }
     /**
      * Creates new form FrmLibro
