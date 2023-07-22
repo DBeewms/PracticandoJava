@@ -100,6 +100,11 @@ public class FrmPersona extends javax.swing.JFrame {
         lblNombre.setText("Nombre");
 
         cmbSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer" }));
+        cmbSexo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbSexoActionPerformed(evt);
+            }
+        });
 
         lblApellido.setText("Apellido");
 
@@ -270,6 +275,10 @@ public class FrmPersona extends javax.swing.JFrame {
         lista.add(person);
         showTable();
     }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void cmbSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbSexoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbSexoActionPerformed
     
     private void showTable(){
         DefaultTableModel tbl=new DefaultTableModel();
