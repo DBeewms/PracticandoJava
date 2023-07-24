@@ -171,7 +171,8 @@ public class FrmCategory extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (!tfCodigo.getText().isEmpty()) {
             int op = JOptionPane.showConfirmDialog(this,
-                    "Realmente desea eliminar?", "Eliminar", JOptionPane.YES_NO_OPTION);
+                    "¿Realmente desea eliminar?", 
+                    "Eliminar categoría", JOptionPane.YES_NO_OPTION);
             if (op == 0) {
                 JOptionPane.showMessageDialog(this, "Eliminado con éxito");
             } else if (op == 1) {
